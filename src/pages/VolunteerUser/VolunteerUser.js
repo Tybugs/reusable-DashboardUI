@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Functions = () => {
+const Hosting = () => {
     return (
         <div style={{marginLeft: '500px'}}>
-            This is functions page.
+            This is a Volunteer page.
         </div>
     )
 }
 
-export default Functions
+export default Hosting

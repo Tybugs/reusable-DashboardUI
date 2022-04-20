@@ -10,15 +10,20 @@ import { mainNavbarItems } from './consts/navbarItems';
 import { navbarStyles } from './styles';
 import { useNavigate } from "react-router-dom";
 
+//logo
+import cares from "../../assets/images/jc_cares_logo.png"
+
 const Navbar = () => {
     const navigate = useNavigate();
 
-    return (
+      return (
+
         <Drawer
           sx={navbarStyles.drawer}
           variant="permanent"
           anchor="left"
       >
+        <img src={cares} alt='' />
         <Toolbar />
         <Divider />
         <List>

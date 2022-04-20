@@ -7,10 +7,11 @@ import CommonButton from '../../components/common/CommonButton/CommonButton';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import GridWrapper from '../../components/common/GridWrapper/GridWrapper';
-import { cardHeaderStyles } from './styles';
+import { dashboardStyles } from './styles';
 import NewUserModal from '../../components/Modals/NewUserModal/NewUserModal';
+import AddIcon from '@mui/icons-material/Add';
 
-const Authentication = () => {
+const Dashboard = () => {
     const [open, setOpen] = useState(false);
     const [users, setUsers] = useState([]);
     const [searchResults, setSearchResults] = useState(users);
@@ -38,20 +39,24 @@ const Authentication = () => {
         };
 
         return (
-            <Box sx={cardHeaderStyles.wrapper}>
+            <Box sx={dashboardStyles.wrapper}>
                 <SearchBar 
-                    placeholder="Search by email address, phone number, or user UID"
+                    placeholder="Search by name, description"
                     onChange={(event) => handleSearch(event.target.value)}
-                    searchBarWidth='720px'
+                    searchBarWidth='250px'
+                    
                 />
-                <Box>
+                <Box sx={dashboardStyles.icons}>
                     <CommonButton 
                         variant="contained"
                         onClick={addUser}
-                        size="large"
-                        sx={cardHeaderStyles.addUserButton}
+                        size="small"
+                        sx={dashboardStyles.addUserButton}
                     >
-                        Add user
+                    <Typography 
+                    >
+                       <AddIcon/> Add admin
+                    </Typography>
                     </CommonButton>
                     <IconButton>
                         <RefreshIcon />
@@ -78,10 +83,7 @@ const Authentication = () => {
                         </Box>
                     )) :
                     <Typography 
-                        align="center"
-                        sx={{ margin: '40px 16px', color: 'rgba(0, 0, 0, 0.6)', fontSize: '1.3rem'}}
                     >
-                        No users for this project yet
                     </Typography>
             }
         </>
@@ -98,4 +100,4 @@ const Authentication = () => {
     )
 }
 
-export default Authentication;
+export default Dashboard;

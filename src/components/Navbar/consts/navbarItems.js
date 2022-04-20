@@ -1,45 +1,59 @@
-import PeopleIcon from '@mui/icons-material/People';
-import ImageIcon from '@mui/icons-material/Image';
-import PublicIcon from '@mui/icons-material/Public';
-import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
-import SettingsInputComponentIcon from '@mui/icons-material/SettingsInputComponent';
-import DnsIcon from '@mui/icons-material/Dns';
+
+import CottageIcon from '@mui/icons-material/Cottage';
+import GroupsIcon from '@mui/icons-material/Groups';
+import CorporateFareSharpIcon from '@mui/icons-material/CorporateFareSharp';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import SummarizeIcon from '@mui/icons-material/Summarize';
+import HelpIcon from '@mui/icons-material/Help';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 export const mainNavbarItems = [
     {
         id: 0,
-        icon: <PeopleIcon />,
-        label: 'Authentication',
-        route: 'authentication',
+        icon: <CottageIcon />,
+        label: 'Dashboard',
+        route: 'dashboard',
     },
     {
         id: 1,
-        icon: <DnsIcon />,
-        label: 'Database',
-        route: 'database',
+        icon: <GroupsIcon />,
+        label: 'Administrator',
+        route: 'administrator',
     },
     {
         id: 2,
-        icon: <ImageIcon />,
-        label: 'Storage',
-        route: 'storage',
+        icon: <CorporateFareSharpIcon />,
+        label: 'Contributors',
+        route: 'contributors',
     },
     {
         id: 3,
-        icon: <PublicIcon />,
-        label: 'Hosting',
-        route: 'hosting',
+        icon: <VolunteerActivismIcon />,
+        label: 'Beneficiary User',
+        route: 'beneficiary-user',
     },
     {
         id: 4,
-        icon: <SettingsEthernetIcon />,
-        label: 'Functions',
-        route: 'functions',
+        icon: <VolunteerActivismIcon />,
+        label: 'Volunteer User',
+        route: 'volunteer-user',
     },
     {
         id: 5,
-        icon: <SettingsInputComponentIcon />,
-        label: 'Machine learning',
-        route: 'machine-learning',
+        icon: <SummarizeIcon />,
+        label: 'Reports',
+        route: 'reports',
+    },
+    {
+        id: 6,
+        icon: <HelpIcon />,
+        label: 'Help',
+        route: 'help',
+    },
+    {
+        id: 7,
+        icon: <SettingsIcon />,
+        label: 'Settings',
+        route: 'settings',
     },
 ]

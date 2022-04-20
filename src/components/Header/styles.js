@@ -3,36 +3,33 @@ export const headerStyles = {
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: '#009be5',
-        padding: '20px',
+        backgroundColor: '#F5F5F5',
+        padding: '1px',
     },
     topRow: {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'end',
         alignItems: 'center',
-        marginBottom: '20px',
+        marginBottom: '1px',
         '*': {
             marginRight: '5px',
         },
     },
-    middleRow: {
+    topRowText: {
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginBottom: '20px',
-        marginLeft: '320px',
+        justifyContent: 'end',
+        marginRight: '1px',
+        fontSize: '15px',
+        fontWeight: '700'
+
     },
-    link: {
-        fontWeight: 500,
-        color: 'rgba(255, 255, 255, 0.7)',
-        "&:hover": {
-            color: '#fff',
-            cursor: 'pointer',
-        },
-    },
-    webButton: {
-        marginRight: '5px',
+    topRowButtom: {
+        display: 'flex',
+        justifyContent: 'end',
+        marginRight: '45px',
+        fontSize: '13px',
+        fontWeight: '100',
     },
 };

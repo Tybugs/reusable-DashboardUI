@@ -8,12 +8,14 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Authentication from './pages/Authentication/Authentication';
-import MachineLearning from './pages/MachineLearning/MachineLearning';
-import Hosting from './pages/Hosting/Hosting';
-import Functions from './pages/Functions/Functions';
-import Database from './pages/Database/Database';
-import Storage from './pages/Storage/Storage';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Administrator from './pages/Administrator/Administrator';
+import Contributors from './pages/Contributors/Contributors';
+import BeneficiaryUser from './pages/BeneficiaryUser/BeneficiaryUser';
+import VolunteerUser from './pages/VolunteerUser/VolunteerUser';
+import Reports from './pages/Reports/Reports';
+import Help from './pages/Help/Help';
+import Settings from './pages/Settings/Settings';
 import { ThemeProvider } from '@mui/material/styles';
 import { dashboardTheme } from './dashboardTheme';
 
@@ -22,12 +24,14 @@ ReactDOM.render(
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="authentication" element={<Authentication />} />
-        <Route path="database" element={<Database />} />
-        <Route path="functions" element={<Functions />} />
-        <Route path="hosting" element={<Hosting />} />
-        <Route path="machine-learning" element={<MachineLearning />} />
-        <Route path="storage" element={<Storage />} />
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="administrator" element={<Administrator />} />
+        <Route path="contributors" element={<Contributors />} />
+        <Route path="beneficiary-user" element={<BeneficiaryUser />} />
+        <Route path="volunteer-user" element={<VolunteerUser />} />
+        <Route path="reports" element={<Reports />} />
+        <Route path="help" element={<Help />} />
+        <Route path="settings" element={<Settings />} />
       </Route>
     </Routes>
   </BrowserRouter>
@@ -35,7 +39,5 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();

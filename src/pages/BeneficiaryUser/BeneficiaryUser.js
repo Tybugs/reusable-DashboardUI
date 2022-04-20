@@ -1,11 +1,11 @@
 import React from 'react'
 
-const MachineLearning = () => {
+const BenefeciaryUser = () => {
     return (
         <div style={{marginLeft: '500px'}}>
-            This is machine learning page.
+            This is BenefeciaryUser page.
         </div>
     )
 }
 
-export default MachineLearning
+export default BenefeciaryUser

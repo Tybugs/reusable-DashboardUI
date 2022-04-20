@@ -10,6 +10,7 @@ const CommonButton = ({ children, color, disabled, size, sx, variant, onClick })
             sx={sx}
             variant={variant}
             onClick={onClick}
+        
         >
             {children}
         </Button>
