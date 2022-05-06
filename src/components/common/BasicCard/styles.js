@@ -1,5 +1,5 @@
 export const cardStyles = {
-    width: '420px',
+    width: '450px',
     height: '50px',
     position: 'absolute',
     left: '30%',
